@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="/shagunbook/">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A shagun list format for marriage that records gifts given AND received, across every event and year — a local-first digital Vyavahar Book (Red Notebook). Print a durable family register. Free, private; this demo stores nothing.">
+
+  <meta property="og:title" content="Shagun list format for marriage — a give-and-return register (Vyavahar Book)">
+  <meta property="og:description" content="Log shagun given and received in both directions, over decades, so you can reciprocate to match custom. Local-first digital Vyavahar Book. Free & private.">
+  <meta property="og:type" content="website">
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="shagunbook">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <title>Shagun list format for marriage — a give-and-return register (Vyavahar Book) | shagunbook</title>
+  <link rel="manifest" href="manifest.json">
+
+  <style>
+    :root { color-scheme: light dark; }
+    body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    #seo-landing { max-width: 780px; margin: 0 auto; padding: 24px 20px 8px; line-height: 1.55;
+      color: #2B1A17; background: #FBF4E6; }
+    #seo-landing h1 { font-size: 1.55rem; color: #7A1F2B; margin: 0 0 8px; }
+    #seo-landing h2 { font-size: 1.08rem; margin: 22px 0 6px; color: #7A1F2B; }
+    #seo-landing code, #seo-landing .num { font-variant-numeric: tabular-nums;
+      background: rgba(0,0,0,0.06); padding: 1px 5px; border-radius: 4px; }
+    #seo-landing .lead { border-left: 3px solid #C9A227; padding-left: 12px; }
+    #seo-landing .fence { color: #8A5A00; font-size: 0.95rem; }
+    #flutter-app { height: 82vh; min-height: 480px; border-top: 3px solid #C9A227; }
+    @media (prefers-color-scheme: dark) {
+      #seo-landing { color: #F2E6D4; background: #17100F; }
+      #seo-landing h1, #seo-landing h2 { color: #E7C55D; }
+      #seo-landing code, #seo-landing .num { background: rgba(255,255,255,0.12); }
+      #seo-landing .fence { color: #E7C55D; }
+    }
+  </style>
+
+  <!-- Crawlable structured data: the Flutter canvas is not indexable, so the
+       facts live in real HTML + JSON-LD. Nothing here makes a network call. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "shagunbook",
+    "applicationCategory": "LifestyleApplication",
+    "operatingSystem": "Web, Windows, macOS, Linux, Android, iOS",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" },
+    "description": "A local-first digital Vyavahar Book: log shagun given and received across events and years, see the neutral give-and-return difference per family, and print a durable heirloom register. Your data is a SQLite file on your own machine."
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a good shagun list format for a marriage?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Record, for each family, the gift amount (or in-kind item), the event and its date, and the direction — whether you received it at your event or gave it at theirs. That is the format of the traditional Vyavahar Book (or neota/chandlo/moy register). shagunbook keeps exactly these fields and adds up each family's totals so you can reciprocate to match custom." }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I track shagun given and received in both directions?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Every entry has a direction. At an event you host, gifts are recorded as received; at a family's event you attend, your gift is recorded as given. shagunbook then shows, per family, total received, total given, and the plain difference (received - given) across all the years you have recorded." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the received minus given difference a debt or something owed?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. It is plain arithmetic and a memory aid only - never a debt, a bill, a balance owed, or advice on what to give. Shagun is gift custom (vyavhar), not a credit or khatapad ledger. shagunbook deliberately never uses dues, owed, or settle language." }
+      },
+      {
+        "@type": "Question",
+        "name": "How are in-kind gifts and different currencies handled?",
+        "acceptedAnswer": { "@type": "Answer", "text": "In-kind gifts (a sari, a vessel) are counted separately and never assigned a rupee value. Cash totals are summed only within a single currency; a family holding more than one currency gets one bucket per currency, never blended. Amounts are never inflation-adjusted - Rs 101 in 1998 and Rs 101 in 2024 are recorded as entered." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is my family's data private?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. shagunbook is local-first: your register is a SQLite file on your own machine and the app runs on localhost. Nothing syncs to any server or cloud account. Unlike cloud guest-manager apps such as Nyota, your decades of records never leave your device. This web demo stores nothing server-side and one-tap Export downloads a real JSON backup you own." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is this the Punjab government Shagun Scheme (the marriage grant)?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. shagunbook is not a government welfare scheme, an application form, or a matrimonial service. It is a private record-keeping app for the family's own reciprocal gift custom (shagun / vyavhar / neota / chandlo / moy)." }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <main id="seo-landing">
+    <h1>Shagun list format for marriage — a give-and-return register you keep forever</h1>
+    <p class="lead"><strong>shagunbook</strong> is a local-first digital <strong>Vyavahar Book</strong>
+    (the family's <em>Red Notebook</em>): it logs shagun <strong>given and received</strong>, in both
+    directions, across every event and every year — so you can reciprocate to match custom, and print a
+    durable family register that outlives the paper <em>bahi</em>.</p>
+
+    <h2>The vyavahar / neota register format</h2>
+    <p>For each family you record the gift — a cash amount in <span class="num">₹</span> or an in-kind
+    item — the occasion and its date, and the <strong>direction</strong>: <em>received</em> at an event
+    you hosted, or <em>given</em> at a family's event you attended. Regional keepers can label families
+    <strong>shagun</strong>, <strong>neota</strong>, <strong>chandlo</strong>, <strong>vyavhar</strong>,
+    or <strong>moy</strong> — the same custom under different names.</p>
+
+    <h2>How the give-and-return math works</h2>
+    <p>For each family, shagunbook sums <strong>received</strong> and <strong>given</strong> (cash, per
+    currency) and shows the plain difference. Worked example — the Sharma family, 1998→2023:
+    received <code>₹5,601</code>, given <code>₹3,200</code>, difference <code>+₹2,401</code> over
+    <code>24</code> years. That difference is a <strong>neutral memory aid</strong>, not a debt.
+    In-kind gifts are counted separately and never valued.</p>
+
+    <h2 class="fence">Gift custom, never a dues book</h2>
+    <p class="fence">shagunbook never says “owed”, “due”, “balance”, or “settle”, and never tells you
+    what to give — it surfaces the facts and you decide. It does not adjust for inflation, sync to any
+    cloud, or touch your contacts.</p>
+
+    <h2>Local-first &amp; durable — built for decades</h2>
+    <p>Your register is a <strong>SQLite file on your own machine</strong>; the full app runs on
+    <code>localhost</code>. One-tap <strong>Export / Import</strong> makes backup the point, not a
+    footnote. Unlike cloud guest-manager apps such as <em>Nyota</em>, nothing leaves your device.
+    This web demo stores nothing server-side.</p>
+
+    <h2>Try it below</h2>
+    <p>The register below is loaded with a sample family history. Edit it or add your own —
+    nothing you type leaves this page.</p>
+  </main>
+
+  <div id="flutter-app"></div>
+
+  <script src="flutter.js" defer></script>
+  <script>
+    window.addEventListener('load', function () {
+      _flutter.loader.load({
+        onEntrypointLoaded: async function (engineInitializer) {
+          const appRunner = await engineInitializer.initializeEngine({
+            hostElement: document.getElementById('flutter-app')
+          });
+          await appRunner.runApp();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
